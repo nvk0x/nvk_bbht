@@ -189,8 +189,23 @@ cat dns-Jhaddix.txt | head -n -14 > clean-jhaddix-dns.txt
 cd ~/tools/
 echo "done"
 
+git clone https://github.com/nsonaniya2010/SubDomainizer.git
+git clone https://github.com/devanshbatham/ArchiveFuzz.git
+#edit folder name mannualy in ArchiveFuzz/archivefuzz/__init...
+GO111MODULE=auto go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
+go get -u github.com/tomnomnom/assetfinder
+git clone https://github.com/gwen001/github-search.git
+$ wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
+$ chmod +x findomain-linux
+$ ./findomain-linux
+mv findomain-linux findomain
+go get github.com/OJ/gobuster
+go get -v github.com/jimen0/fdns/cmd/fdns
+
+
 
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
+echo "edit folder name mannualy in ArchiveFuzz/archivefuzz/__init..."
