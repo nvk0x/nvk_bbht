@@ -37,7 +37,7 @@ select choice in "${choices[@]}"; do
                 yes)
 
 					echo "Installing Golang"
-					wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
+					wget https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
 					sudo tar -xvf go1.13.4.linux-amd64.tar.gz
 					sudo mv go /usr/local
 					export GOROOT=/usr/local/go
@@ -195,9 +195,9 @@ git clone https://github.com/devanshbatham/ArchiveFuzz.git
 GO111MODULE=auto go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
 go get -u github.com/tomnomnom/assetfinder
 git clone https://github.com/gwen001/github-search.git
-$ wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
-$ chmod +x findomain-linux
-$ ./findomain-linux
+wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
+#chmod +x findomain-linux
+#./findomain-linux
 mv findomain-linux findomain
 go get github.com/OJ/gobuster
 go get -v github.com/jimen0/fdns/cmd/fdns
